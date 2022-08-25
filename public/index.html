@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body class="text-gray-600 font-mono">   
+         
+    <div class="grid md:grid-cols-3" > 
+        <!--content wrapper-->
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between items-center">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-200 text-mammoth">
+                      <a href="/" class="hover:text-gray-700">Cold Stone</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                          </svg>
+                    </div>
+                </div>
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold py-1">
+                        <a href="#" class="px-4 flex justify-end border-red-800 border-primary"> 
+                            <span>Home</span>
+                            <svg class="w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                        </a>
+                    </li>
+                    <li py-1>
+                        <a href="#" class="px-4 flex justify-end"> 
+                            <span>About</span>
+                            <svg class="w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </a>
+                    </li>
+                    <li py-1>
+                        <a href="#" class="px-4 flex justify-end"> 
+                            <span>Contact</span>
+                            <svg class="w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2 ">
+        <div class="flex justify-end md:justify-end">
+            <a href="#" class="btn text-primary border-primary md:border-2 br-10 hover:bg-red-600 hover:text-white transition ease-out duration-500">Log in</a>
+            <a href="#"class="btn  text-primary  ml-2 border-primary md:border-2 bp-5 br-10  hover:bg-red-600 hover:text-white transition ease-out duration-500">Sign up</a>
+        </div>
+            
+        <header>
+            <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+            <h3 class="text-2xl font-semibold ">For Ninjas</h3>
+        </header>
+
+        <div>
+            <h4 class="font-bold mt-12 pb-2 border-b border-gray-200 ">Latest Recipes</h4>
+
+            <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                <!--card goes here-->
+                <div class="card hover:shadow-lg">  
+                    <img src="img/images 3.jpg" alt="images 3" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">12 Big Daddy Pizza</span>
+                        <span class="block text-gray-500 text-sm">Recipe by Bones</span>
+                    </div>
+                    <div class="badge">
+                        <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>45mins</span>
+                    </div>
+                </div>
+                <div class="card hover:shadow-lg">  
+                <img src="img/maggi 1.jpg" alt="maggi 1" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4">
+                    <span class="font-bold">6 Suya Flavour Pizza</span>
+                    <span class="block text-gray-500 text-sm">Recipe by Bones</span>
+                </div>
+                <div class="badge">
+                    <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span>25mins</span>
+                </div>
+                </div>
+            
+                <div class="card hover:shadow-lg">  
+                    <img src="img/maggi 2.jpg" alt="maggi 2" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">8 Beef Flavour Pizza</span>
+                        <span class="block text-gray-500 text-sm">Recipe by Bones</span>
+                    </div>
+                    <div class="badge">
+                        <svg class="w-5 inline-block " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>35mins</span>
+                    </div>
+                </div>
+            </div>
+            <h4 class="font-bold mt-12 pb-2 border-b border-gray-200 text-">Most popular</h4>
+            <div class="mt-8">
+                
+            </div>
+
+            <div class="flex justify-center">
+                <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">Load More</div>
+            </div>
+        </div>
+
+
+        </main>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
